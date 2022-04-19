@@ -1,0 +1,38 @@
+<!-- my-dialog-modal.component.html -->
+
+
+
+<div class="header" style="margin-bottom:24px">
+  <div style=" font-size:1.25rem; color: #016BC3; font-weight: 500; letter-spacing: .75px;">
+    Select Language
+  </div>
+  <div>
+    <span style="display: inline-block;" class="" (click)="closeDialog()">
+
+      <mat-icon class="close-icon" aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+    </span>
+  </div>
+</div>
+<!-- <div>
+  <mat-form-field>
+    <input matInput [(ngModel)]="fromDialog">
+  </mat-form-field>
+</div> -->
+<div class="select-languages">
+  <div class="language">
+    <input type="radio" id="english" name="english" [(ngModel)]="fromDialog" value="English" checked>
+    <label class="languge-label" for="english">English</label>
+  </div>
+
+  <div class="language">
+    <input type="radio" id="huey" name="drone" [(ngModel)]="fromDialog" value="Français Canadian" checked>
+    <label class="languge-label" for="huey">Français Canadian</label>
+  </div>
+
+  <div class="language">
+    <input type="radio" id="Japanese" name="Japanese" [(ngModel)]="fromDialog" value="Japanese">
+    <label class="languge-label" for="Japanese">Japanese</label>
+  </div>
+
+
+</div>

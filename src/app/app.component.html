@@ -1,2 +1,16 @@
-<h1>how you doing</h1>
-<router-outlet></router-outlet>
+<div *ngIf="dialogValue">
+  <b>Value From Dialog</b>: {{dialogValue}}
+</div>
+<!-- <div style="display: flex; justify-content: flex-end; align-items: center;">
+  <button mat-raised-button (click)="openDialog($event)">Open Dialog</button>
+</div> -->
+<div style="display: flex; justify-content: flex-end; align-items: center;" (click)="openDialog($event)">
+  <mat-icon class="icon-class material-icons-outlined" aria-hidden="false" aria-label="Example home icon">translate
+  </mat-icon>
+  <div style="color: #016BC3; ">
+
+    Language:{{dialogValue}}
+  </div>
+
+
+</div>

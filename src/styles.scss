@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+// .backdrop-class {
+//   background-color: aqua;
+// }
+// .panel-class {
+//   background-color: green !important;
+// }
+
+.mat-dialog-container {
+  // padding-top: 0.75rem !important;
+  // padding-left: 0.75rem !important;
+  padding: 0 !important;
+  padding-right: 0.5rem !important;
+}
